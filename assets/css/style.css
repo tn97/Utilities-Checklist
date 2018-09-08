@@ -1,0 +1,33 @@
+.title-display {
+  text-align: center;
+  background: -webkit-linear-gradient(#8A2387,#E94057,#F27121);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
+
+.lead-text {
+  text-align: center;
+  background: -webkit-linear-gradient(#ee0979, #ff6a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.jumbotron-color {
+  background: #F2994A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.jumbotron-fluid {
+  padding: 10px;
+}
+
+form {
+  float: none;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#to-do {
+  margin-right: 5px;
+}

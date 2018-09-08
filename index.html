@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <title>Checklist!</title>
+  <!-- This checklist will write to localStorage, allowing for needed information to be saved. -->
+</head>
+
+<body>
+  <!-- Intro Jumbotron -->
+  <div class="jumbotron-fluid jumbotron-color">
+    <div class="container">
+      <h1 class="display-4 title-display"> Checklist </h1>
+      <p class="lead lead-text">This is a simple checklist that you'll be able to use on the go. Unfortunately, it
+        doesn't have cloud storage as of yet, but it does have local!</p>
+    </div>
+    <!-- Begin form Element -->
+    <form>
+      <span id="todo-items">To Do Items: <input id="to-do" type="text"><input class="btn btn-light" id="add-to-do" value="Add Item" type="submit"></span>
+    </form>
+  </div>
+  <!-- End Form Element -->
+  
+  <hr>
+
+  <!-- To Do List -->
+  <div id="to-dos"></div>
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- javascript -->
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
