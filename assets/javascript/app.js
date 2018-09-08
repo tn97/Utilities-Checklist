@@ -6,7 +6,7 @@ function renderTodos(list) {
     
     // Create a new variable that will hold a <p> tag.
     // Set the value of the list at "i" as text to the "<p>" element.
-    var p = $("<p>");
+    var p = $("<p id='p-color'>");
     p.text(list[i]);
     
     // Create a button based off of the number at i, which will cause it to be unique at every iteration.
@@ -15,14 +15,14 @@ function renderTodos(list) {
     var btnCheck = $("<button>");
     btnCheck
     .attr("data-to-do", i)
-    .addClass("checkbox")
+    .addClass("btn btn-checkbox checkbox")
     .text("✓");
 
     // Append the button to the todo item
     p = p.prepend(btnCheck);
 
     // Add the button and the p tag to the todos div 
-    $("to-dos").append(p);
+    $("#to-dos").append(p);
   }
 }
 
@@ -36,7 +36,7 @@ $("#add-to-do").on("click", function(event) {
   list.push(toDoTask);
 
   // Update ToDo's
-  renderTodos();
+  renderTodos(list);
 
   // Save the todos into local storage.
   // We need JSON.stringify to convert them into a string inside the storage.

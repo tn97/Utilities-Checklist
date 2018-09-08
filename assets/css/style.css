@@ -1,3 +1,16 @@
+body {
+  background: #5433FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.background {
+  background: #536976;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
 .title-display {
   text-align: center;
   background: -webkit-linear-gradient(#8A2387,#E94057,#F27121);
@@ -19,6 +32,7 @@
 }
 
 .jumbotron-fluid {
+  margin-bottom: 5px;
   padding: 10px;
 }
 
@@ -30,4 +44,24 @@ form {
 
 #to-do {
   margin-right: 5px;
+  margin-bottom: 5px;
+  width: 400px;
+  margin: 5px auto;
+}
+
+.checkbox {
+  margin-right: 15px;
+  margin-left: 5px;
+}
+
+.btn-checkbox {
+  background: #16A085;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #F4D03F, #16A085);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #F4D03F, #16A085); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+
+#p-color {
+  color: white;
+  padding: 5px;  
 }
